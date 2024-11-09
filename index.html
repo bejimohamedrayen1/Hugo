@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Hugo - Paris</title>
-    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
     <script src="script.js" defer></script>
@@ -31,7 +31,7 @@
         <div class="hero-content">
             <h1 class="fade-in">Café Hugo</h1>
             <p class="fade-in">Une expérience parisienne depuis 1970</p>
-            <button class="cta-button fade-in">Discover Our Menu</button>
+            <button class="cta-button fade-in" onclick="scrollToMenu()">Découvrir Notre Menu</button>
         </div>
     </section>
 
@@ -94,7 +94,52 @@
                         <p class="item-description">Double espresso, lait mousseux et cacao</p>
                     </div>
                 </div>
-                <!-- Other menu categories will be shown/hidden via JavaScript -->
+                <div class="menu-category" id="pastries">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Croissant</h3>
+                            <span class="price">€2.50</span>
+                        </div>
+                        <p class="item-description">Croissant pur beurre fait maison</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Pain au Chocolat</h3>
+                            <span class="price">€2.80</span>
+                        </div>
+                        <p class="item-description">Chocolat noir enveloppé de pâte feuilletée</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Éclair au Café</h3>
+                            <span class="price">€4.50</span>
+                        </div>
+                        <p class="item-description">Pâte à choux, crème au café, glaçage café</p>
+                    </div>
+                </div>
+                <div class="menu-category" id="lunch">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Croque Monsieur</h3>
+                            <span class="price">€9.50</span>
+                        </div>
+                        <p class="item-description">Jambon de Paris, fromage Emmental, béchamel maison</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Quiche Lorraine</h3>
+                            <span class="price">€8.50</span>
+                        </div>
+                        <p class="item-description">Lardons, oignons caramélisés, crème fraîche</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Salade Niçoise</h3>
+                            <span class="price">€12.50</span>
+                        </div>
+                        <p class="item-description">Thon, œufs, olives, tomates, anchois, vinaigrette maison</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
