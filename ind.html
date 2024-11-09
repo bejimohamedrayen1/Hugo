@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Hugo - Paris</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo" id="logo">Café Hugo</div>
+            <button class="mobile-menu" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Café Hugo</h1>
+            <p class="fade-in">Une expérience parisienne depuis 1970</p>
+            <button class="cta-button fade-in">Discover Our Menu</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Notre Histoire</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Niché dans le cœur du 16ème arrondissement de Paris, Café Hugo est une institution qui incarne l'essence du café parisien traditionnel depuis plus de cinquante ans.</p>
+                    <p>Chaque jour, nos artisans baristas perpétuent la tradition du café de qualité, accompagné de pâtisseries fraîches préparées sur place.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="54">0</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1000">0</span>
+                            <span class="stat-label">Coffees Served Daily</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Signature Drinks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image parallax"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Notre Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-category="coffee">Café</button>
+                <button class="tab-button" data-category="pastries">Pâtisseries</button>
+                <button class="tab-button" data-category="lunch">Déjeuner</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="coffee">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Espresso</h3>
+                            <span class="price">€3.50</span>
+                        </div>
+                        <p class="item-description">Notre signature blend, intense et parfumé</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Café Crème</h3>
+                            <span class="price">€4.50</span>
+                        </div>
+                        <p class="item-description">Espresso avec une mousse de lait crémeuse</p>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">€5.00</span>
+                        </div>
+                        <p class="item-description">Double espresso, lait mousseux et cacao</p>
+                    </div>
+                </div>
+                <!-- Other menu categories will be shown/hidden via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Nous Trouver</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>15 Avenue Victor Hugo<br>75016 Paris, France</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lun-Ven: 7h - 20h<br>Sam-Dim: 8h - 21h</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+33 1 45 00 00 00</p>
+                    </div>
+                </div>
+                <div id="map" class="map-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Café Hugo</div>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">© 2024 Café Hugo. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
