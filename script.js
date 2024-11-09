@@ -11,6 +11,12 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
 });
 
+// Scroll to menu function
+function scrollToMenu() {
+    const menuSection = document.getElementById('menu');
+    menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
 // Scroll effects
 window.addEventListener('scroll', () => {
     // Navigation background
@@ -113,7 +119,6 @@ function initMap() {
                 "elementType": "all",
                 "stylers": [{"color": "#f8f3e9"}]
             }
-            // Add more custom styles as needed
         ]
     });
 
